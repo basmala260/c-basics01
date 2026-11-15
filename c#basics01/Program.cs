@@ -22,11 +22,34 @@ namespace c_basics01
             #endregion
 
             #region question3
-            //complie error
-            int pages = 464;
+            ////complie error
+            //int pages = 464;
 
             #endregion
 
+            #region question4
+
+            try
+            {
+                int num1 = 10;
+                int num2 = 0;
+                int result = num1 / num2;
+
+            }
+            catch (DivideByZeroException ex)
+            {
+
+                Console.WriteLine("catch block");
+                Console.WriteLine("Can't divide by zero");
+                Console.WriteLine("======================");
+
+            }
+            finally
+            {
+                Console.WriteLine("finally block");
+                Console.WriteLine("done");
+            }
+            #endregion
 
         }
     }
